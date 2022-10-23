@@ -2,10 +2,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "resolveJsonModule": true,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -18,6 +19,14 @@
     "importHelpers": true,
     "target": "es2020",
     "module": "es2020",
+    "paths": {
+      "@core/*": ["src/app/core/*"
+    ],
+      "@module/*": ["src/app/module/*"
+    ],
+      "@shared/*": ["src/app/shared/*"
+    ]
+    },
     "lib": [
       "es2020",
       "dom"
